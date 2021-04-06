@@ -1,0 +1,15 @@
+extends demo.pug
+block style
+    style
+        include ../static/css/style.css
+        include ../static/css/contact.css
+
+block content
+    div.contact-us
+        h2.text-center Contact
+        form(action="", method="POST")
+            input(type="text", name="name" placeholder="Enter your name")    
+            input(type="text", name="phone" placeholder="Enter your phone no")
+            input(type="text", name="email" placeholder="Enter your email")
+            textarea(name="message", cols="30", rows="5" placeholder="Enter your message")  
+            button(type="submit") Submit

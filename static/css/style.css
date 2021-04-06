@@ -1,0 +1,136 @@
+*{margin:0;padding:0;}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 15px 0px;
+   position: relative;
+}
+.logo h1{
+    color:white;
+}
+#navbar ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+#navbar ul li{
+    list-style: none;
+    margin-left:25px;
+}
+#navbar ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+#introSection{
+    width:100%;
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+#introSection h1{
+    font-size: 3rem;
+}
+#introSection p{
+    font-size:1.5rem;
+    margin-top:20px;
+}
+#introSection .join{
+    margin-top: 15px;
+    padding: 11px;
+    outline: none;
+    border: 1px solid darkorange;
+    border-radius: 22px;
+    width: 120px;
+    background-color: darkorange;
+    color: white;
+    font-size: 17px;
+    cursor:pointer;
+}
+#introSection .join:hover{
+    background-color: white;
+    color:darkorange;
+}
+#introSection::before{
+    content: "";
+    position:absolute;
+    background:url('./img/dance.jpg') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index:-1;
+    width:100%;
+    height:100%;
+}
+
+#Services{
+    width:100%;
+    height:auto;
+    padding:15px 0px;
+    margin:20px 0px;
+}
+#Services h2{
+    font-size:2.5rem;
+    margin:50px 0px;
+}
+.text-center{
+    text-align: center;
+}
+#Services .Our-Services{
+    display:grid;
+    grid-template-columns: repeat(4, 250px);
+    align-items: center;
+    justify-content: center;
+    grid-gap:1.2rem;
+}
+.Our-Services .card img{
+    width:100%;
+    height:270px;
+
+}
+
+#sponsorsSection{
+    width: 100%;
+    height: auto;
+    padding: 45px 0px;
+    margin: 30px 0px;
+}
+#sponsorsSection h2{
+    font-size:2.5rem;
+    margin-bottom:60px;
+}
+.Our-Sponsor{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.Our-Sponsor .box{
+    margin:0px 25px;
+}
+.Our-Sponsor .box img{
+    width:200px;
+    height:200px;
+}
+
+footer{
+    width:100%;
+    height:auto;
+    padding:10px 0px;
+    background-color:rgb(96, 96, 231);
+    color:white;
+}
+footer p{
+    font-size: 1.3rem;
+}
